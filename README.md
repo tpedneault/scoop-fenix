@@ -12,5 +12,5 @@ scoop install fenix
 releases by itself: a scheduled workflow checks for a new one every day
 and updates `bucket/fenix.json`.
 
-Fenix is also available as a Windows installer and on winget; see its
+Fenix is also available as a Windows installer, and as .deb and .rpm packages; see its
 [install instructions](https://github.com/tpedneault/fenix#install).
