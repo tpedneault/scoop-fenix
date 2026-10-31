@@ -1,6 +1,6 @@
 name: Excavator
 
-# Checks for a new Fenix release every day and updates the manifest
+# Checks for a new Fenix release four times a day and updates the manifest
 # (checkver and autoupdate in bucket/fenix.json).
 
 on:
