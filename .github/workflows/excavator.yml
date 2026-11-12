@@ -1,11 +1,15 @@
 name: Excavator
 
-# Checks for a new Fenix release four times a day and updates the manifest
-# (checkver and autoupdate in bucket/fenix.json).
+# Checks for a new Fenix release four times a day and updates the manifests
+# (checkver and autoupdate in bucket/fenix.json and
+# bucket/fenix-nightly.json), and twice more in the hours after Fenix's
+# nightly is built (03:41 UTC), so fenix-nightly's hash isn't behind the
+# nightly's files for long.
 
 on:
   schedule:
     - cron: '20 */6 * * *'
+    - cron: '20 4,5 * * *'
   workflow_dispatch:
 
 permissions:
